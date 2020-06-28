@@ -10,13 +10,13 @@ function prompt_char {
 	if [ $UID -eq 0 ]; then echo "#"; else echo $; fi
 }
 
-PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)%m %{$fg_bold[blue]%}%(!.%1~.%~) $(git_prompt_info)$(prompt_char)%{$reset_color%} '
+PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)%m %{$fg_bold[blue]%}%(!.%1~.%~) $(prompt_char)%{$reset_color%} '
 
-ZSH_THEME_GIT_PROMPT_PREFIX="("
-ZSH_THEME_GIT_PROMPT_SUFFIX=") "
+ZSH_THEME_GIT_PROMPT_PREFIX=" "
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
 
 local return_status=" %{$fg_bold[red]%}%(?..%?)%{$reset_color%}"
-RPROMPT='${return_status}$(_awsGetProfile 2> /dev/null)$(_node_version)%{$reset_color%}'
+RPROMPT='${return_status}$(_awsGetProfile 2> /dev/null)$(_node_version)$(git_prompt_info)$(git_prompt_status)%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_DIRTY=""
 ZSH_THEME_GIT_PROMPT_CLEAN=""
