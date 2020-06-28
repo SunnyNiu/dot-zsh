@@ -32,7 +32,7 @@ zinit is-snippet for ~/.zsh/script/alias.zsh
 zinit is-snippet for ~/.zsh/script/aws.zsh
 zinit is-snippet for ~/.zsh/script/k5l.zsh
 zinit is-snippet for ~/.zsh/script/notifier.zsh
-zinit is-snippet for ~/.zsh/themes/myfishymod.zsh-theme
+zinit is-snippet for ~/.zsh/themes/gentoo.zsh-theme
 
 # Misc
 [ -f /usr/libexec/java_home ] && export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
