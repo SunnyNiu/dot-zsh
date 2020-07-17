@@ -39,3 +39,15 @@ zinit is-snippet for ~/.zsh/themes/gentoo.zsh-theme
 [ -f ~/.iterm2_shell_integration.zsh ] && test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash
 [ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.`basename $SHELL`
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+
+export ANDROID_HOME=/usr/local/share/android-sdk
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+local GEM_DIR=$(gem environment gemdir)
+export PATH="$GEM_DIR/bin:$PATH"
+###-tns-completion-start-###
+if [ -f /Users/sunny/.tnsrc ]; then 
+    source /Users/sunny/.tnsrc 
+fi
+###-tns-completion-end-###
+
