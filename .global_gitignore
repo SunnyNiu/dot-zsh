@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+.metals
+.bloop
+.vscode
+metals.sbt
+*.iml
+/target
+.aider.*
+.augment-guidelines
+.claude
+CLAUDE.md
+GEMINI.md
+AGENTS.md
