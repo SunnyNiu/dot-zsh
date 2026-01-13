@@ -21,4 +21,5 @@ export HOMEBREW_NO_ENV_HINTS=1
 export FNM_LOGLEVEL=quiet
 export STARSHIP_CONFIG=~/.zsh/starship.toml
 export STARSHIP_LOG=error
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 [ -f ~/.zshenv.local ] && source ~/.zshenv.local
