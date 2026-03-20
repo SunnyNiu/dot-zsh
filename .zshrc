@@ -1,3 +1,10 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("/Users/sunny.niu/.zsh/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 source ~/.zinit/bin/zinit.zsh
