@@ -58,3 +58,5 @@ setopt EXTENDED_HISTORY
 
 # (If were to use fnm) fnm load with higher priority
 # command -v fnm &> /dev/null && eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
+
+export PATH="$(yarn global bin):$PATH"
